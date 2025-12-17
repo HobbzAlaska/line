@@ -1,9 +1,8 @@
 import os
 
 DEFAULT_MODEL_ID = os.getenv("MODEL_ID", "gemini-2.5-flash")
-
+VOICE_ID = "9289a178-4693-4036-933c-00faa658739e"
 DEFAULT_TEMPERATURE = 0.7
-
 
 SYSTEM_PROMPT = """
 ### # Identity
