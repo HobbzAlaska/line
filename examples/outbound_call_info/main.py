@@ -63,7 +63,7 @@ async def handle_new_call(system: VoiceAgentSystem, call_request: CallRequest):
     )
 
     await system.start()
-    await system.send_initial_message("Hi there! How are you?")
+    await system.send_initial_message("Hello? Yes, hello... is this the Discover Card place? I'm having a terrible time with my computer thing.")
     await system.wait_for_shutdown()
 
 
