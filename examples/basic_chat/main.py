@@ -7,9 +7,9 @@ from google import genai
 from line import Bridge, CallRequest, VoiceAgentApp, VoiceAgentSystem
 from line.events import UserStartedSpeaking, UserStoppedSpeaking, UserTranscriptionReceived
 
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = os.getenv("AIzaSyA2pdzhXQ1RYLCP9sQaB4B52KYYRT366pM")
 if GEMINI_API_KEY:
-    gemini_client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+    gemini_client = genai.Client(api_key=os.getenv("AIzaSyA2pdzhXQ1RYLCP9sQaB4B52KYYRT366pM"))
 else:
     gemini_client = None
 
@@ -34,7 +34,7 @@ async def handle_new_call(system: VoiceAgentSystem, call_request: CallRequest):
 
     await system.start()
     await system.send_initial_message(
-        "Hello! I am your voice agent powered by Cartesia. What do you want to build?"
+        "Hello!My name is Michael Rogers, how are you?"
     )
     await system.wait_for_shutdown()
 
